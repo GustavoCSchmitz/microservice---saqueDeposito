@@ -5,7 +5,7 @@ Obs: Este projeto só faz sentido executando juntamente com os outros 4 serviço
    - [Carteira](https://github.com/GustavoCSchmitz/microservice---carteira)
    - [Pagamentos](https://github.com/GustavoCSchmitz/microservice---pagamentos)
    - [Eureka Server](https://github.com/GustavoCSchmitz/microservice---eureka)
-   - [Usuários]()
+   - [Usuários](https://github.com/GustavoCSchmitz/microservice---usuarios)
 
 
 ### Requisitos de API e instruções para execução
