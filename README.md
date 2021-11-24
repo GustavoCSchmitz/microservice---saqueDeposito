@@ -1,5 +1,5 @@
 # microservice---saqueDeposito
-Este projeto é um microservice simples desenvolvido com a tecnologia Spring Boot utilizando Maven e API Rest, onde o usuário consegue efetuar saques, depósitos e transferências através dessa API.
+Este projeto é um microservice desenvolvido com a tecnologia Spring Boot utilizando Maven e API Rest, onde o usuário consegue efetuar saques, depósitos e transferências através dessa API.
 
 Obs: Este projeto só faz sentido executando juntamente com os outros 4 serviços
    - [Carteira](https://github.com/GustavoCSchmitz/microservice---carteira)
