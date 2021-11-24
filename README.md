@@ -62,10 +62,12 @@ Obs: Este projeto só faz sentido executando juntamente com os outros 4 serviço
         }
         ```
         - Todos os campos são obrigatórios   
+        
    - Método: GET
+   
       - Movimentações bancarias de um usuário
-       - [http://localhost:8080/movimentacoes/{idUsuário}]()
-       - Este endpoint tem como retorno um JSON com todas as movimentações bancárias realizadas pelo usuário
+         - [http://localhost:8080/movimentacoes/{idUsuário}]()
+         - Este endpoint tem como retorno um JSON com todas as movimentações bancárias realizadas pelo usuário
 
 
  
