@@ -19,48 +19,53 @@ Obs: Este projeto só faz sentido executando juntamente com os outros 4 serviço
       `mvn spring-boot:run`
       
 ### API endpoint
-  - Depósito
-     - [http://localhost:8080/deposito]()
-     - Deve ser inserido um json, semelhante ao exemplo abaixo:
-     ```
-     {
-       "valor": 550.0,
-       "carteira":{
-           "titular": "Gustavo"
+  - Método: POST
+     - Depósito
+       - [http://localhost:8080/deposito]()
+       - Deve ser inserido um json, semelhante ao exemplo abaixo:
+       ```
+       {
+          "valor": 550.0,
+          "carteira":{
+              "titular": "Gustavo"
+          }
        }
-     }
-     ```
-      - Todos os campos são obrigatórios
+       ```
+       - Todos os campos são obrigatórios
    
-   - Saque
-     - [http://localhost:8080/saque]()
-     - Deve ser inserido um json, semelhante ao exemplo abaixo:
-     ```
-     {
-       "valor": 550.0,
-       "carteira":{
-           "titular": "Gustavo"
-       }
-     }
-     ```
-      - Todos os campos são obrigatórios
+     - Saque
+        - [http://localhost:8080/saque]()
+        - Deve ser inserido um json, semelhante ao exemplo abaixo:
+        ```
+        {
+          "valor": 550.0,
+          "carteira":{
+              "titular": "Gustavo"
+          }
+        }
+        ```
+        - Todos os campos são obrigatórios
 
 
-   - Transferência
-     - [http://localhost:8080/transferencia]()
-     - Deve ser inserido um json, semelhante ao exemplo abaixo:
-     ```
-     {
-       "valor": 400.0,
-       "origem":{
-           "titular": "Gustavo"
-       },
-       "destino":{
-          "titular": "Larissa"
-       }
-     }
-     ```
-      - Todos os campos são obrigatórios
+     - Transferência
+        - [http://localhost:8080/transferencia]()
+        - Deve ser inserido um json, semelhante ao exemplo abaixo:
+        ```
+        {
+          "valor": 400.0,
+          "origem":{
+              "titular": "Gustavo"
+        },
+          "destino":{
+             "titular": "Larissa"
+          }
+        }
+        ```
+        - Todos os campos são obrigatórios   
+   - Método: GET
+      - Movimentações bancarias de um usuário
+       - [http://localhost:8080/movimentacoes/{idUsuário}]()
+       - Este endpoint tem como retorno um JSON com todas as movimentações bancárias realizadas pelo usuário
 
 
  
