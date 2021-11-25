@@ -21,15 +21,10 @@ public class TransferenciaController {
 	
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<String> realizaTransferencia(@RequestBody TransferenciaDTO transferencia) throws IOException{
-		String mensagem;
 		try {
-			transferenciaService.realizaTransferencia(transferencia);
-			mensagem = "Transferência no valor de R$" + transferencia.getValor() + " de " + transferencia.getOrigem().getTitular() +
-					" para " + transferencia.getDestino().getTitular() + " realizada com sucesso";
-			return new ResponseEntity<>(mensagem, HttpStatus.OK);
+			return transferenciaService.realizaTransferencia(transferencia);
 		}catch(Exception e) {
-			mensagem = "Ocorreu um erro durante a execução do saque";
-			return new ResponseEntity<>(mensagem, HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<>("Ocorreu um erro durante a execução do saque", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
 }
