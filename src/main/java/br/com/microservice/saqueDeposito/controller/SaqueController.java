@@ -21,7 +21,6 @@ public class SaqueController {
 	public ResponseEntity<String> realizaSaque(@RequestBody InfoOperacaoBancariaDTO saque) throws IOException{
 		try {
 			return saqueService.realizaSaque(saque);
-			//return new ResponseEntity<>("Saque no valor de R$"+saque.getValor()+" realizado com sucesso", HttpStatus.OK);
 		}catch(Exception e) {
 			return new ResponseEntity<>("Ocorreu um erro durante a execução do saque", HttpStatus.INTERNAL_SERVER_ERROR);
 		}

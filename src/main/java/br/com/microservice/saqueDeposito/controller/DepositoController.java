@@ -20,8 +20,7 @@ public class DepositoController {
 	@PostMapping("/deposito")
 	public ResponseEntity<String> realizaDeposito(@RequestBody InfoOperacaoBancariaDTO deposito) throws IOException{
 		try {
-			depositoService.realizaDeposito(deposito);
-			return new ResponseEntity<>("Depósito no valor de R$"+deposito.getValor()+" realizado com sucesso", HttpStatus.OK);
+			return depositoService.realizaDeposito(deposito);
 		}catch(Exception e) {
 			return new ResponseEntity<>("Ocorreu um erro durante a execução do depósito", HttpStatus.INTERNAL_SERVER_ERROR);
 		}
