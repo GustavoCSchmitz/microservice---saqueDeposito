@@ -7,6 +7,12 @@ Obs: Este projeto só faz sentido executando juntamente com os outros 4 serviço
    - [Eureka Server](https://github.com/GustavoCSchmitz/microservice---eureka)
    - [Usuários](https://github.com/GustavoCSchmitz/microservice---usuarios)
 
+### Ordem de execução
+- 1º [Eureka Server](https://github.com/GustavoCSchmitz/microservice---eureka)
+- 2º [Pagamentos](https://github.com/GustavoCSchmitz/microservice---pagamentos)
+- 3º [Carteira](https://github.com/GustavoCSchmitz/microservice---carteira)
+- 4º [Saque,depósito e transferência](https://github.com/GustavoCSchmitz/microservice---saqueDeposito)
+- 5º [Usuários](https://github.com/GustavoCSchmitz/microservice---usuarios)
 
 ### Requisitos de API e instruções para execução
  - Java 8
